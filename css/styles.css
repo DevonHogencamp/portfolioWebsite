@@ -34,7 +34,16 @@
   clear: both; }
 
 #hero {
-  background-color: #577ECB; }
+  background-color: #577ECB;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px; }
+  #hero h1 {
+    color: #ffffff;
+    font-size: 50px; }
+  #hero p {
+    font-size: 25px;
+    color: #cccccc; }
   #hero img {
     width: 100%; }
 

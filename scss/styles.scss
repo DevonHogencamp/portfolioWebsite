@@ -5,6 +5,7 @@
 $darkBlue: #2c3e50;
 $darkGreen: #18bb9c;
 $lightBlue: #47beff;
+$gray: #cccccc;
 $offWhite: #eeeeee;
 $white: #ffffff;
 $lightGreen: #0CCE6B;
@@ -52,7 +53,18 @@ $lightGreen: #0CCE6B;
 
 #hero {
     background-color: #577ECB;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
 
+    h1{
+        color: $white;
+        font-size: 50px;
+    }
+    p{
+        font-size: 25px;
+        color: $gray;
+    }
     img{
         width: 100%;
     }
