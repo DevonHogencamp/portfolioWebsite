@@ -49,5 +49,16 @@
 
 #profile {
   border-radius: 100%;
-  border: 10px solid black;
-  width: 30%; }
+  border: 10px solid #2c3e50;
+  width: 90%; }
+
+#about {
+  text-align: center;
+  vertical-align: middle; }
+
+.row {
+  display: table-row; }
+
+.section {
+  display: table-cell;
+  width: 25%; }
