@@ -2,13 +2,20 @@
 @import url( 'https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 // Colors
-$darkBlue: #2c3e50;
-$darkGreen: #18bb9c;
-$lightBlue: #47beff;
-$gray: #cccccc;
-$offWhite: #eeeeee;
-$white: #ffffff;
-$lightGreen: #0CCE6B;
+$darkBlue:   #2c3e50;
+$hero:       #577ECB;
+$lightBlue:  #47beff;
+$tealGreen:  #00ffff;
+$teal:       #00e8ff;
+$cyan:       #00BCD4;
+$greenSea:   #16a085;
+$turquoise:  #1abc9c;
+$emerald:    #2ecc71;
+$nephritis:  #27ae60;
+$gray:       #cccccc;
+$offWhite:   #eeeeee;
+$white:      #ffffff;
+
 
 * {
     font-family: 'Open Sans', sans-serif;
@@ -16,43 +23,50 @@ $lightGreen: #0CCE6B;
     padding: 0;
 }
 
-#header{
-    background-color: #2c3e50;
-    width: 96%;
-    height: 100%;
-    padding: 15px 2%;
-    margin: 0;
+nav {
+    background-color: $darkBlue;
+    display: flex;
+    padding: 10px 20px;
 
-    li {
+    h1 {
+        font-size: 30px;
+        transition: all 0.1s ease-in-out;
+    }
+    h1:hover {
+        font-size: 35px;
+    }
+    ul {
         list-style-type: none;
-        height: 30px;
-        line-height: 30px;
-        float: right;
-        background-color: $lightGreen;
-        padding: 10px 10px;
-        margin: 0 10px;
+    }
+    ul#links {
+        display: flex;
+        flex: 1 1 0;
+        justify-content: flex-end;
+    }
+    ul#links li {
+        margin-left: 15px;
+        display: flex;
+        flex: 0 0 10%;
+        list-style-type: none;
+        background-color: $emerald;
         border-radius: 2px;
     }
-    #logo{
-        float: left;
-        background-color: transparent;
+    ul#links li:hover {
+        background-color: rgba(12, 206, 107, .9);;
     }
     a {
+        margin: 0 auto;
         text-decoration: none;
-        color: #ffffff;
-        text-transform: uppercase;
+        text-align: center;
+        color: $white;
         font-weight: bold;
+        display: block;
+        align-self: center;
     }
-}
-
-#header::after {
-    display: block;
-    content: "";
-    clear: both;
 }
 
 #hero {
-    background-color: #577ECB;
+    background-color: $hero;
     text-align: center;
     vertical-align: middle;
     line-height: 70px;
@@ -70,22 +84,24 @@ $lightGreen: #0CCE6B;
     }
 }
 
-#profile {
-    border-radius: 100%;
-    border: 10px solid $darkBlue;
-    width: 90%;
-}
-
 #about{
     text-align: center;
     vertical-align: middle;
+    background: $offWhite;
 }
 
-.row{
-    display: table-row;
+#about section {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.section{
-    display: table-cell;
-    width: 25%;
+#about div {
+    flex: 1 1 33.33%;
+}
+
+#profile img {
+    border-radius: 100%;
+    width: 80%;
+    margin: 0 auto;
 }

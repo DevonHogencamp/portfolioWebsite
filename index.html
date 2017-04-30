@@ -6,33 +6,37 @@
         <title>Devon Hogencamp</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body id="home">
-        <ul id="header">
-            <li id="logo">
-                <a href="#home">
-                    <h1>&lt;DH/&gt;</h1>
-                </a>
-            </li>
+    <body>
+        <nav>
+            <ul id="logo">
+                <li>
+                    <a href="#">
+                        <h1>&lt;DH/&gt;</h1>
+                    </a>
+                </li>
+            </ul>
 
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
+            <ul id="links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
 
-            <!-- <li><img src="images/icons" alt="Menu Pulldown"></li> -->
-        </ul>
+                <!-- <li><img src="images/icons" alt="Menu Pulldown"></li> -->
+            </ul>
+        </nav>
 
         <div id="hero">
             <div id="heroTop">
                 <h1>I'm Devon Hogencamp,</h1>
 
-                <p id="heroTagline">A  Stack Web Developer ready to take on your web project</p>
+                <p>A Full Stack Web Developer ready to take on your web project</p>
             </div>
 
             <picture>
-                <source srcset="images/heroS.jpg" media="(max-width: 480px)">
-                <source srcset="images/heroM.jpg" media="(max-width: 768px)">
-                <img srcset="images/setupVector.png" alt="hero" />
+                <source srcset="images/hero.png" media="(max-width: 480px)">
+                <source srcset="images/hero.png" media="(max-width: 768px)">
+                <img srcset="images/hero.png" alt="hero" />
             </picture>
         </div>
 
@@ -41,16 +45,16 @@
 
             <hr>
 
-            <div class="row">
-                <div class="section">
+            <section>
+                <div id="aboutme">
                     <p>**About Me**</p>
                 </div>
 
-                <div class="section">
-                    <img src="images/profile.png" alt="Devon Hogencamp Profile Picture" id="profile">
+                <div id="profile">
+                    <img src="images/profile.png" alt="Devon Hogencamp Profile Picture">
                 </div>
 
-                <div class="section">
+                <div id="quotes">
                     <blockquote>
                         <span>
                             <img src="images/quote.svg">
@@ -81,7 +85,7 @@
                         </span>
                     </blockquote>
                 </div>
-            </div>
+            </section>
         </div>
 
         <div id="skills">
