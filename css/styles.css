@@ -19,20 +19,23 @@ nav {
     display: flex;
     flex: 1 1 0;
     justify-content: flex-end; }
-  nav ul#links li {
-    margin-left: 15px;
-    display: flex;
-    flex: 0 0 10%;
-    list-style-type: none;
-    background-color: #2ecc71;
-    border-radius: 2px; }
-  nav ul#links li:hover {
-    background-color: rgba(12, 206, 107, 0.9); }
+    nav ul#links li {
+      margin-left: 15px;
+      display: flex;
+      flex: 0 0 10%;
+      list-style-type: none;
+      background-color: #2ecc71;
+      border-radius: 2px;
+      transition: all 0.07s ease-in-out; }
+    nav ul#links li:hover {
+      background-color: rgba(12, 206, 107, 0.9); }
+      nav ul#links li:hover a {
+        color: #ffffff; }
   nav a {
     margin: 0 auto;
     text-decoration: none;
     text-align: center;
-    color: #ffffff;
+    color: #eeeeee;
     font-weight: bold;
     display: block;
     align-self: center; }
@@ -52,8 +55,8 @@ nav {
     width: 100%; }
 
 hr {
-  border-color: #cccccc;
-  opacity: 0.4; }
+  border-color: #333333;
+  opacity: 0.3; }
 
 #about {
   text-align: center;
@@ -73,20 +76,20 @@ hr {
     display: flex;
     width: 65%;
     margin: 40px auto; }
-  #about #aboutme h2 {
-    font-size: 25px; }
   #about p {
+    color: #333333;
     font-size: 15px;
     text-align: left; }
   #about #quotes {
     display: flex;
     flex-flow: column; }
     #about #quotes blockquote {
-      flex: 1 1 0; }
+      flex: 1 1 0;
+      color: #333333;
+      font-size: 18px;
+      font-weight: 100; }
   #about #profile img {
     border-radius: 100%;
     width: 80%;
     margin: 0 auto;
     border: 10px solid #16a085; }
-  #about #quotes img {
-    width: 10%; }

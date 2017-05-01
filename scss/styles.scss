@@ -2,6 +2,8 @@
 @import url( 'https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 // Colors
+$charcoal:   #222222;
+$slate:      #333333;
 $darkBlue:   #2c3e50;
 $hero:       #577ECB;
 $lightBlue:  #47beff;
@@ -42,23 +44,28 @@ nav {
         display: flex;
         flex: 1 1 0;
         justify-content: flex-end;
-    }
-    ul#links li {
-        margin-left: 15px;
-        display: flex;
-        flex: 0 0 10%;
-        list-style-type: none;
-        background-color: $emerald;
-        border-radius: 2px;
-    }
-    ul#links li:hover {
-        background-color: rgba(12, 206, 107, .9);;
+
+        li {
+            margin-left: 15px;
+            display: flex;
+            flex: 0 0 10%;
+            list-style-type: none;
+            background-color: $emerald;
+            border-radius: 2px;
+            transition: all 0.07s ease-in-out;
+        }
+        li:hover {
+            background-color: rgba(12, 206, 107, .9);
+            a {
+                color: $white;
+            }
+        }
     }
     a {
         margin: 0 auto;
         text-decoration: none;
         text-align: center;
-        color: $white;
+        color: $offWhite;
         font-weight: bold;
         display: block;
         align-self: center;
@@ -85,8 +92,8 @@ nav {
 }
 
 hr {
-    border-color: $gray;
-    opacity: 0.4;
+    border-color: $slate;
+    opacity: 0.3;
 }
 
 #about{
@@ -112,12 +119,8 @@ hr {
         width: 65%;
         margin: 40px auto;
     }
-    #aboutme {
-        h2 {
-            font-size: 25px;
-        }
-    }
     p {
+        color: $slate;
         font-size: 15px;
         text-align: left;
     }
@@ -127,6 +130,9 @@ hr {
 
         blockquote {
             flex: 1 1 0;
+            color: $slate;
+            font-size: 18px;
+            font-weight: 100;
         }
     }
     #profile img {
@@ -134,8 +140,5 @@ hr {
         width: 80%;
         margin: 0 auto;
         border: 10px solid $greenSea;
-    }
-    #quotes img {
-        width: 10%;
     }
 }
