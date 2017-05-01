@@ -51,20 +51,42 @@ nav {
   #hero img {
     width: 100%; }
 
+hr {
+  border-color: #cccccc;
+  opacity: 0.4; }
+
 #about {
   text-align: center;
   vertical-align: middle;
-  background: #eeeeee; }
-
-#about section {
-  display: flex;
-  width: 80%;
-  margin: 0 auto; }
-
-#about div {
-  flex: 1 1 33.33%; }
-
-#profile img {
-  border-radius: 100%;
-  width: 80%;
-  margin: 0 auto; }
+  background: #eeeeee;
+  padding: 40px 0; }
+  #about h2 {
+    color: #16a085;
+    font-size: 60px;
+    font-weight: 100; }
+  #about hr {
+    width: 65%;
+    margin: 0 auto; }
+  #about div {
+    flex: 1 1 33.33%; }
+  #about section {
+    display: flex;
+    width: 65%;
+    margin: 40px auto; }
+  #about #aboutme h2 {
+    font-size: 25px; }
+  #about p {
+    font-size: 15px;
+    text-align: left; }
+  #about #quotes {
+    display: flex;
+    flex-flow: column; }
+    #about #quotes blockquote {
+      flex: 1 1 0; }
+  #about #profile img {
+    border-radius: 100%;
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid #16a085; }
+  #about #quotes img {
+    width: 10%; }
