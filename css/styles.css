@@ -55,8 +55,8 @@ nav {
     width: 100%; }
 
 hr {
-  border-color: #333333;
-  opacity: 0.3; }
+  width: 65%;
+  margin: 0 auto; }
 
 #about {
   text-align: center;
@@ -68,8 +68,8 @@ hr {
     font-size: 60px;
     font-weight: 100; }
   #about hr {
-    width: 65%;
-    margin: 0 auto; }
+    border-color: #333333;
+    opacity: 0.3; }
   #about div {
     flex: 1 1 33.33%; }
   #about section {
@@ -93,3 +93,22 @@ hr {
     width: 80%;
     margin: 0 auto;
     border: 10px solid #16a085; }
+
+#skills {
+  text-align: center;
+  vertical-align: middle;
+  background: #2c3e50;
+  padding: 40px 0; }
+  #skills h2 {
+    color: #16a085;
+    font-size: 60px;
+    font-weight: 100; }
+  #skills hr {
+    border-color: #ffffff;
+    opacity: 0.5; }
+  #skills section {
+    display: flex;
+    width: 65%;
+    margin: 40px auto; }
+  #skills div.column {
+    flex: 1 1 50%; }
