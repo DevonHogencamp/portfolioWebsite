@@ -112,3 +112,19 @@ hr {
     margin: 40px auto; }
   #skills div.column {
     flex: 1 1 50%; }
+  #skills div.item {
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    color: #ffffff; }
+    #skills div.item span.title {
+      text-align: left;
+      flex: 2 1 0;
+      line-height: 40px;
+      font-size: 20px; }
+    #skills div.item span.stars {
+      display: flex;
+      justify-content: space-between;
+      flex: 1 1 0; }
+      #skills div.item span.stars img {
+        flex: 1 1 0; }

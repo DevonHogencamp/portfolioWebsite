@@ -166,4 +166,26 @@ hr {
     div.column {
         flex: 1 1 50%;
     }
+    div.item{
+        height: 40px;
+        display: flex;
+        padding: 10px;
+        color: $white;
+
+        span.title {
+            text-align: left;
+            flex: 2 1 0;
+            line-height: 40px;
+            font-size: 20px;
+        }
+        span.stars {
+            display: flex;
+            justify-content: space-between;
+            flex: 1 1 0;
+
+            img {
+                flex: 1 1 0;
+            }
+        }
+    }
 }
