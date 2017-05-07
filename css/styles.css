@@ -94,37 +94,87 @@ hr {
     margin: 0 auto;
     border: 10px solid #16a085; }
 
-#skills {
+#skills, #tools {
   text-align: center;
   vertical-align: middle;
   background: #2c3e50;
   padding: 40px 0; }
-  #skills h2 {
+  #skills h2, #tools h2 {
     color: #16a085;
     font-size: 60px;
     font-weight: 100; }
-  #skills hr {
+  #skills hr, #tools hr {
     border-color: #ffffff;
     opacity: 0.5; }
-  #skills section {
+  #skills section, #tools section {
     display: flex;
     width: 65%;
     margin: 40px auto; }
-  #skills div.column {
+  #skills div.column, #tools div.column {
     flex: 1 1 50%; }
-  #skills div.item {
+  #skills div.item, #tools div.item {
     height: 40px;
     display: flex;
     padding: 10px;
-    color: #ffffff; }
-    #skills div.item span.title {
+    color: #ffffff;
+    transition: all 0.1s ease-in-out; }
+    #skills div.item span.title, #tools div.item span.title {
       text-align: left;
       flex: 2 1 0;
       line-height: 40px;
       font-size: 20px; }
-    #skills div.item span.stars {
+    #skills div.item span.stars, #tools div.item span.stars {
       display: flex;
       justify-content: space-between;
       flex: 1 1 0; }
-      #skills div.item span.stars img {
+      #skills div.item span.stars img, #tools div.item span.stars img {
         flex: 1 1 0; }
+  #skills div.item:hover, #tools div.item:hover {
+    background: #47beff; }
+
+#education, #certification {
+  text-align: center;
+  vertical-align: middle;
+  background: #eeeeee;
+  padding: 40px 0; }
+  #education h2, #certification h2 {
+    color: #16a085;
+    font-size: 60px;
+    font-weight: 100; }
+  #education hr, #certification hr {
+    border-color: #333333;
+    opacity: 0.3; }
+  #education section, #certification section {
+    text-align: left;
+    width: 65%;
+    margin: 40px auto; }
+  #education .education, #certification .education {
+    padding: 15px;
+    border-left: 5px solid #16a085; }
+  #education .content, #certification .content {
+    background: #1abc9c;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px;
+    margin-top: 10px;
+    border-bottom: 5px solid #16a085; }
+
+#projects {
+  text-align: center;
+  vertical-align: middle;
+  background: #222222;
+  padding: 40px 0; }
+  #projects h2 {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 100; }
+  #projects hr {
+    border-color: #ffffff;
+    opacity: 0.3; }
+  #projects section {
+    text-align: left;
+    width: 65%;
+    margin: 40px auto; }
+    #projects section .project {
+      flex: 0 0 50%;
+      flex-flow: wrap; }
