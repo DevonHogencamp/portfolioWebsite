@@ -192,6 +192,15 @@ hr {
     div.item:hover {
         background: $lightBlue;
     }
+
+    #toolPictures {
+        .column {
+            img {
+                display: inline;
+                width: 60%;
+            }
+        }
+    }
 }
 
 #education, #certification {

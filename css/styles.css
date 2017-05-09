@@ -131,6 +131,9 @@ hr {
         flex: 1 1 0; }
   #skills div.item:hover, #tools div.item:hover {
     background: #47beff; }
+  #skills #toolPictures .column img, #tools #toolPictures .column img {
+    display: inline;
+    width: 60%; }
 
 #education, #certification {
   text-align: center;
